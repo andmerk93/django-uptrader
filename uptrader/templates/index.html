@@ -1,0 +1,13 @@
+<p> Hi there
+<hr>
+<p>
+    <a>
+        {{ context.tree }}
+    </a>
+
+<p>
+    
+    {% for menu_obj in context.tree %}
+       <a href='{{ BASE_URL }}/{{ menu_obj.url }}'> {{ menu_obj.slug }} </a> / 
+    {% endfor %}
+    
